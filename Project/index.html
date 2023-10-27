@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Local Storage</title>
+<script src="index.js"></script>
+<style>
+    table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th,
+td{
+    border: 1px solid rgba(0,0,0,0.6);
+    padding:10px;
+
+}
+</style>
+</head>
+<body onload="initialize()">
+    <table>
+        <tr>
+            <th>student picture</th>
+            <th>Name</th>
+            <th>Reg No</th>
+        </tr>
+      <tr>
+       <td>
+        <img src=""width="250px" height="100px" alt="">
+       </td>
+       <td>Sarah Karanja</td>
+       <td>SCT221-0546/2021</td>
+      </tr>
+    </table>
+        <ui id="storedItems"></ui>
+        <button type="button" onclick="setColorPreference('red')">Red</button>
+        <button type="button"
+        onclick="setColorPreference('green')">Green</button>
+        <button type="button"
+        onclick="setColorPreference('blue')">Blue</button>
+        <div id="visitCount"></div>
+        <button type="button" onclick="removeCount()">Remove count</button>
+        <button type="button" onclick="clearAll()">Clear all</button>
+</body>
+</body>
+</html>
